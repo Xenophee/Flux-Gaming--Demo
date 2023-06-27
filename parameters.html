@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/assets/bootstrap-icons-1.10.3/bootstrap-icons.css">
+    <link rel="stylesheet" href="./public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/assets/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container px-0">
+            <img src="" alt="">
+            <nav class="navbar navbar-expand-md navbar-dark bg-warning">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav main-nav ms-2">
+                            <li class="nav-item">
+                                <a class="nav-link px-5" aria-current="page" href="./index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-5" href="./page.html">Sujet 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-5" href="./page.html">Sujet 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-5" href="./page.html">Sujet 3</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-lg-3">
+                            <li class="nav-item">
+                                <a class="nav-link active px-5" href="./parameters.html"><i class="bi bi-gear"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container border">
+            <h1 class="text-center my-5">Paramètres</h1>
+
+            <div class="row">
+                <div class="col">
+                    <form method="POST">
+                        <fieldset class="bg-warning my-4">
+                            <legend class="text-center my-5">Choix du thème :</legend>
+                            <div class="d-flex flex-column flex-md-row justify-content-evenly pb-5 ps-3">
+                                <div class="d-inline d-flex align-items-center mb-4 mb-lg-0">
+                                    <input type="radio" name="themeChoice" value="1" id="light"
+                                        class="form-check-input me-2">
+                                    <label class="form-check-label" for="light">Clair</label>
+                                </div>
+                                <div class="d-inline d-flex align-items-center mb-4 mb-lg-0">
+                                    <input type="radio" name="themeChoice" value="2" id="dark"
+                                        class="form-check-input me-2">
+                                    <label class="form-check-label" for="dark">Sombre</label>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <small class="text-center text-danger"></small>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="bg-warning my-4">
+                            <legend class="text-center my-5">Choisissez trois sujets parmi les suivants :</legend>
+                            <div class="d-flex flex-column flex-md-row justify-content-around pb-5 ps-3">
+                                <div class="form-check d-flex align-items-center mb-4 mb-lg-0">
+                                    <input class="form-check-input" type="checkbox" name="subjects[]" value="0" id="pc">
+                                    <label class="form-check-label ms-3" for="pc">PC</label>
+                                </div>
+                                <div class="form-check d-flex align-items-center mb-4 mb-lg-0">
+                                    <input class="form-check-input" type="checkbox" name="subjects[]" value="1"
+                                        id="xbox">
+                                    <label class="form-check-label ms-3" for="xbox">XBOX</label>
+                                </div>
+                                <div class="form-check d-flex align-items-center mb-4 mb-lg-0">
+                                    <input class="form-check-input" type="checkbox" name="subjects[]" value="2"
+                                        id="ps5">
+                                    <label class="form-check-label ms-3" for="ps5">PS5</label>
+                                </div>
+                                <div class="form-check d-flex align-items-center mb-4 mb-lg-0">
+                                    <input class="form-check-input" type="checkbox" name="subjects[]" value="3"
+                                        id="switch">
+                                    <label class="form-check-label ms-3" for="switch">Switch</label>
+                                </div>
+                                <div class="form-check d-flex align-items-center mb-4 mb-lg-0">
+                                    <input class="form-check-input" type="checkbox" name="subjects[]" value="4"
+                                        id="mobile">
+                                    <label class="form-check-label ms-3" for="gameboy">Mobile</label>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <small class="text-center text-danger"></small>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="bg-warning my-4">
+                            <legend class="text-center my-5">Combien d'articles souhaitez-vous par
+                                catégorie ?</legend>
+                                <div class="d-flex flex-column flex-md-row justify-content-around pb-5 ps-3">
+                                    <div class="d-inline d-flex align-items-center mb-4 mb-lg-0">
+                                        <input type="radio" name="articlesNumber" value="6" id="articlesNumber6"
+                                            class="form-check-input me-2">
+                                        <label class="form-check-label" for="articlesNumber6">6</label>
+                                    </div>
+                                    <div class="d-inline d-flex align-items-center mb-4 mb-lg-0">
+                                        <input type="radio" name="articlesNumber" value="9" id="articlesNumber9"
+                                            class="form-check-input me-2">
+                                        <label class="form-check-label" for="articlesNumber9">9</label>
+                                    </div>
+                                    <div class="d-inline d-flex align-items-center mb-4 mb-lg-0">
+                                        <input type="radio" name="articlesNumber" value="12" id="articlesNumber12"
+                                            class="form-check-input me-2">
+                                        <label class="form-check-label" for="articlesNumber12">12</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <small class="text-center text-danger"></small>
+                                </div>
+                        </fieldset>
+
+
+                        <!-- BOUTON ENVOYER -->
+                        <div class="d-flex justify-content-center my-5">
+                            <button type="submit" class="btn py-2 px-5" id="save">Enregistrer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container bg-warning">
+            <div class="row pt-4">
+                <div class="col d-flex flex-column flex-md-row justify-content-center align-items-center">
+                    <a href="" class="mx-5 my-2">Mentions Légales</a>
+                    <a href="" class="mx-5 my-2">Cookies</a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <hr>
+            </div>
+            <div class="row justify-content-center pb-4">
+                <div class="col-12 col-xl-5 d-flex justify-content-center">
+                    <small class="">© Tous droits réservés.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./public/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

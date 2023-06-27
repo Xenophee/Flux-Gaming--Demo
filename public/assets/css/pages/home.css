@@ -1,0 +1,101 @@
+
+
+.separator {
+    width: 85%;
+}
+
+.mainLink, .mediumLink {
+    position: relative;
+}
+
+.mainLink img {
+    height: 424px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mediumLink img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.divText {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+}
+
+.mediumLink h3 {
+    font-size: 1.1rem;
+}
+
+.mainLink small, .mediumLink small {
+    width: 30%;
+    border-top: 2px solid gold;
+}
+
+.divText hr {
+    border-bottom: 2px solid white;
+}
+
+.divText p {
+    border-left: 2px solid white;
+}
+
+
+.mainElement {
+    width: 100%;
+    border-right: 2px solid gold;
+}
+
+.lastTest {
+    border: 2px solid gold;
+}
+
+.lastTest img {
+    object-fit: cover;
+}
+
+.lastTest small {
+    width: 100%;
+    border-top: 2px solid gold;
+}
+
+.lastTestLink {
+    width: 100%;
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px)  {
+
+    .lastTest small {
+        width: 30%;
+    }
+
+    .lastTestLink {
+        width: 30%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    .mainElement {
+        width: 60%;
+    }
+
+    .lastTest small {
+        width: 30%;
+    }
+
+    .lastTestText {
+        width: 40%;
+    }
+
+    .lastTestLink {
+        width: 35%;
+    }
+}

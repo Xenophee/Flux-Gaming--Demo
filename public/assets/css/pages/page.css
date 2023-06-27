@@ -1,0 +1,46 @@
+
+.subjectImg {
+    height: 55vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.firstArticle {
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
+}
+
+.firstArticle img {
+    object-fit: cover;
+}
+
+.date {
+    width: 50%;
+    border-bottom: 2px solid gold;
+}
+
+.firstLink {
+    width: 100%;
+}
+
+.firstArticle .btn {
+    width: 90%;
+}
+
+@media (min-width: 768px) and (max-width: 1200px)  {
+
+    .subjectImg {
+        height: 35vh;
+    }
+
+    .firstArticle .btn {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .firstArticle .btn {
+        width: 25%;
+    }
+}

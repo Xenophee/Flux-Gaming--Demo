@@ -1,0 +1,16 @@
+
+
+.main-nav .nav-link {
+    border-right: 1px solid brown;
+}
+
+.nav-link.active {
+    background-color: brown;
+}
+
+
+
+
+footer hr {
+    width: 75%;
+}
