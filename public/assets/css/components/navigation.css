@@ -17,7 +17,7 @@
     color: var(--light-font);
 }
 
-.main-nav .nav-link {
+.main-nav .nav-item {
     border-right: var(--border-special-solid);
 }
 
@@ -29,8 +29,9 @@
 
 .nav-link.active {
     background-color: var(--special-color);
-    border-top: var(--border-special-solid);
-    border-bottom: var(--border-special-solid);
+    border: var(--border-special-solid);
+    box-shadow: var(--nav-shadow);
+    color: var(--light-font) !important;
 }
 
 .nav-link.active:hover {
