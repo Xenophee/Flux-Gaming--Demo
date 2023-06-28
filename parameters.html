@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Noto+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/assets/bootstrap-icons-1.10.3/bootstrap-icons.css">
     <link rel="stylesheet" href="./public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/assets/css/theme/lightmode.css">
     <link rel="stylesheet" href="./public/assets/css/main.css">
-    <title>Document</title>
+    <title>Paramètres</title>
 </head>
 
 <body>
@@ -15,7 +17,8 @@
     <header>
         <div class="container px-0">
             <img src="" alt="">
-            <nav class="navbar navbar-expand-md navbar-dark bg-warning">
+            <span class="siteTitle">FLUX-GAMING</span>
+            <nav class="navbar navbar-expand-md navbar-dark">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                     aria-label="Toggle navigation">
@@ -24,7 +27,7 @@
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
                     aria-labelledby="offcanvasDarkNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
@@ -34,13 +37,13 @@
                                 <a class="nav-link px-5" aria-current="page" href="./index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-5" href="./page.html">Sujet 1</a>
+                                <a class="nav-link px-5" href="./page.html">PC</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-5" href="./page.html">Sujet 2</a>
+                                <a class="nav-link disabled px-5" href="">XBOX</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-5" href="./page.html">Sujet 3</a>
+                                <a class="nav-link disabled px-5" href="">PS5</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-lg-3">
@@ -55,13 +58,14 @@
     </header>
 
     <main>
-        <div class="container border">
-            <h1 class="text-center my-5">Paramètres</h1>
+        <div class="container px-0">
+            <section class="pt-5 mx-md-5">
+                <h1 class="text-center py-5 mb-5">Paramètres</h1>
 
-            <div class="row">
-                <div class="col">
+            <div class="row justify-content-center mx-1 mx-md-0">
+                <div class="col-12 col-xl-11">
                     <form method="POST">
-                        <fieldset class="bg-warning my-4">
+                        <fieldset class="my-4">
                             <legend class="text-center my-5">Choix du thème :</legend>
                             <div class="d-flex flex-column flex-md-row justify-content-evenly pb-5 ps-3">
                                 <div class="d-inline d-flex align-items-center mb-4 mb-lg-0">
@@ -80,7 +84,7 @@
                             </div>
                         </fieldset>
 
-                        <fieldset class="bg-warning my-4">
+                        <fieldset class="my-4">
                             <legend class="text-center my-5">Choisissez trois sujets parmi les suivants :</legend>
                             <div class="d-flex flex-column flex-md-row justify-content-around pb-5 ps-3">
                                 <div class="form-check d-flex align-items-center mb-4 mb-lg-0">
@@ -113,7 +117,7 @@
                             </div>
                         </fieldset>
 
-                        <fieldset class="bg-warning my-4">
+                        <fieldset class="my-4">
                             <legend class="text-center my-5">Combien d'articles souhaitez-vous par
                                 catégorie ?</legend>
                                 <div class="d-flex flex-column flex-md-row justify-content-around pb-5 ps-3">
@@ -146,11 +150,12 @@
                     </form>
                 </div>
             </div>
+            </section>
         </div>
     </main>
 
     <footer>
-        <div class="container bg-warning">
+        <div class="container">
             <div class="row pt-4">
                 <div class="col d-flex flex-column flex-md-row justify-content-center align-items-center">
                     <a href="" class="mx-5 my-2">Mentions Légales</a>

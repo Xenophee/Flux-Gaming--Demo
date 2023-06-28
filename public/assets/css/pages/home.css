@@ -1,8 +1,8 @@
 
 
-.separator {
-    width: 85%;
-}
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* DERNIERS ARTICLES */
 
 .mainLink, .mediumLink {
     position: relative;
@@ -26,6 +26,8 @@
     top: 50%;
     left: 50%;
     width: 100%;
+    background-color: var(--special-dark-filter-color);
+    color: var(--light-font);
 }
 
 .mediumLink h3 {
@@ -34,25 +36,27 @@
 
 .mainLink small, .mediumLink small {
     width: 30%;
-    border-top: 2px solid gold;
-}
-
-.divText hr {
-    border-bottom: 2px solid white;
+    border-top: var(--border-first-solid);
 }
 
 .divText p {
-    border-left: 2px solid white;
+    border-left: var(--border-first-solid);;
 }
 
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* PARTIE TEST */
+
+.lastTest {
+    background-color: var(--first-color);
+    border: var(--border-special-dark-solid);
+    box-shadow: var(--box-shadow);
+}
 
 .mainElement {
     width: 100%;
-    border-right: 2px solid gold;
-}
-
-.lastTest {
-    border: 2px solid gold;
+    border-right: var(--border-special-dark-solid);
 }
 
 .lastTest img {
@@ -61,12 +65,17 @@
 
 .lastTest small {
     width: 100%;
-    border-top: 2px solid gold;
+    border-top: var(--border-special-dark-solid);
 }
 
 .lastTestLink {
     width: 100%;
 }
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
 
 
 @media (min-width: 768px) and (max-width: 1200px)  {

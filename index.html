@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Noto+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/assets/bootstrap-icons-1.10.3/bootstrap-icons.css">
     <link rel="stylesheet" href="./public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/assets/css/theme/lightmode.css">
     <link rel="stylesheet" href="./public/assets/css/main.css">
     <title>Accueil</title>
 </head>
@@ -15,16 +17,17 @@
     <header>
         <div class="container px-0">
             <img src="" alt="">
-            <nav class="navbar navbar-expand-md navbar-dark bg-warning">
+            <span class="siteTitle">FLUX-GAMING</span>
+            <nav class="navbar navbar-expand-md navbar-dark">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar"
                     aria-labelledby="offcanvasDarkNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
@@ -55,13 +58,13 @@
     </header>
 
     <main>
-        <div class="container d-flex flex-column align-items-center border">
+        <div class="container d-flex flex-column align-items-center px-0">
 
             <!-- SECTION AVEC LES QUATRES DERNIERS ARTICLES MIS EN AVANT -->
             <section>
-                <h1 class="text-center py-5">Toute l'actu des jeux vidéos !</h1>
-                <h2 class="text-center">Les derniers articles</h2>
-                <div class="row mt-5">
+                <h1 class="text-center py-5 mt-5 mx-xl-5">Toute l'actu des jeux vidéos !</h1>
+                <h2 class="text-center py-3 py-md-0 mt-5"><span class="px-md-5">Les derniers articles</span></h2>
+                <div class="row pt-xl-5 mt-5 mx-3">
 
                     <!-- PREMIER ARTICLE -->
                     <div class="col-12 col-xl-4">
@@ -70,7 +73,7 @@
                             <article class="mb-4 mb-xl-0">
                                 <img src="https://i.jeuxactus.com/datas/jeux/p/a/payday-3/vn/payday-3-6499749be8eb7.jpg"
                                     alt="" class="img-fluid">
-                                <div class="divText d-flex flex-column justify-content-center align-items-center">
+                                <div class="divText d-flex flex-column justify-content-center align-items-center py-4">
                                     <h3 class="text-center">PAYDAY 3 : on y a joué avec les développeurs chez
                                         Starbreeze, nos premières
                                         impressions (Preview)</h3>
@@ -85,13 +88,13 @@
                     </div>
 
                     <!-- LES DEUX ARTICLES SUIVANTS -->
-                    <div class="col-12 col-xl-4 d-flex flex-xl-column justify-content-around">
+                    <div class="col-12 col-xl-4 d-flex flex-column justify-content-around">
                         <a href="https://www.jeuxactu.com/les-schtroumpfs-2-1ere-video-de-gameplay-il-y-a-une-vibe-ratchet-clank-129717.htm"
-                            target="_blank" rel="noopener noreferrer" class="mediumLink">
-                            <article class="mb-xl-4">
+                            target="_blank" rel="noopener noreferrer" class="mediumLink mb-4">
+                            <article>
                                 <img src="https://i.jeuxactus.com/datas/jeux/l/e/les-schtroumpfs-2-le-prisonnier-de-la-pierre-verte/vn/les-schtroumpfs-2-le-pr-649a766cc38d4.jpg"
                                     alt="" class="img-fluid">
-                                <div class="divText d-flex flex-column justify-content-center align-items-center">
+                                <div class="divText d-flex flex-column justify-content-center align-items-center py-4">
                                     <h3 class="text-center">Les Schtroumpfs 2 : 1ère vidéo de gameplay, il y a une vibe
                                         Ratchet & Clank</h3>
                                     <small class="d-flex justify-content-center pt-2 mt-3">26/06/2023</small>
@@ -106,7 +109,7 @@
                             <article>
                                 <img src="https://i.jeuxactus.com/datas/divers/c/i/cinema-et-jeux-video/vn/cinema-et-jeux-video-6498b08e954e9.jpg"
                                     alt="" class="img-fluid">
-                                <div class="divText d-flex flex-column justify-content-center align-items-center">
+                                <div class="divText d-flex flex-column justify-content-center align-items-center py-4">
                                     <h3 class="text-center">Indiana Jones et le Cadran de la Destinée : est-ce vraiment
                                         la catastrophe annoncée ?</h3>
                                     <small class="d-flex justify-content-center pt-2 mt-3">25/06/2023</small>
@@ -125,7 +128,7 @@
                             <article class="mt-4 mt-xl-0">
                                 <img src="https://i.jeuxactus.com/datas/jeux/t/i/tintin-reporter-les-cigares-du-pharaon/vn/tintin-reporter-les-ci-6495c6e98d325.jpg"
                                     alt="" class="img-fluid">
-                                <div class="divText d-flex flex-column justify-content-center align-items-center px-3 px-xl-4">
+                                <div class="divText d-flex flex-column justify-content-center align-items-center px-3 px-xl-4 py-4">
                                     <h3 class="text-center">Tintin Les Cigares du Pharaon : on y a joué, quand Microids
                                         a des envies d'Uncharted (Preview)</h3>
                                     <small class="d-flex justify-content-center pt-2 mt-3 mb-4">23/06/2023</small>
@@ -142,8 +145,8 @@
             <hr class="separator my-5">
 
             <!-- SECTION AVEC LA SUITE DES ARTICLES -->
-            <section class="">
-                <div class="row">
+            <section>
+                <div class="row mx-3">
                     <div class="col-12 col-md-6 col-xl-3 mb-5 mb-xl-0">
                         <article class="card">
                             <img src="https://i.jeuxactus.com/datas/evenements/e/3/e3-2023/vn/e3-2023-642689c1c0045.jpg"
@@ -215,7 +218,7 @@
                                     <span aria-hidden="true">&laquo;</span>
                                 </a>
                             </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item">
@@ -233,9 +236,9 @@
             <hr class="separator my-5">
 
             <!-- PARTIE TESTS -->
-            <section class="">
-                <h2 class="text-center mb-5">Les derniers tests</h2>
-                <div class="row">
+            <section>
+                <h2 class="text-center py-3 py-md-0 mb-5"><span class="px-md-5">Les derniers tests</span></h2>
+                <div class="row pt-xl-5 mx-3">
 
                     <div class="col-12 mb-4">
                         <article class="d-flex flex-column flex-xl-row align-items-center lastTest p-4">
@@ -302,7 +305,7 @@
                                     <span aria-hidden="true">&laquo;</span>
                                 </a>
                             </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item">
@@ -319,9 +322,9 @@
             <hr class="separator my-5">
 
             <!-- LES DERNIERES ET PROCHAINES SORTIES DE JEUX -->
-            <section class="">
-                <h2 class="text-center mb-5">Les prochaines / dernières sorties</h2>
-                <div class="row justify-content-around">
+            <section>
+                <h2 class="text-center py-3 py-md-0 mb-5"><span class="px-md-5">Les prochaines / dernières sorties</span></h2>
+                <div class="row justify-content-around py-xl-5 mx-3">
                     <div class="col-10 col-md-5 col-xl-3 mb-4">
                         <a href="https://www.jeuxactu.com/index.php?module=fiches&action=show&id=24636&t=50&m=aew-fight-forever" target="_blank" rel="noopener noreferrer">
                             <article class="card">
@@ -360,7 +363,7 @@
     </main>
 
     <footer>
-        <div class="container bg-warning">
+        <div class="container">
             <div class="row pt-4">
                 <div class="col d-flex flex-column flex-md-row justify-content-center align-items-center">
                     <a href="" class="mx-5 my-2">Mentions Légales</a>

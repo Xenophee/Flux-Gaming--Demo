@@ -3,17 +3,20 @@
 .card {
     position: relative;
     height: 100%;
+    background-color: var(--first-color);
+    color: var(--dark-font);
+    border: var(--border-special-solid);
+    box-shadow: var(--box-shadow);
 }
 
 .card small {
     width: 30%;
-    border-bottom: 2px solid gold;
+    border-bottom: var(--border-special-dark-solid);
 }
 
 
 .littleLink {
     position: absolute;
-    background-color: brown;
     width: 80%;
     transform: translate(-50%, -50%);
     top: 100%;
@@ -21,6 +24,9 @@
 }
 
 
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
 
 @media (min-width: 768px) and (max-width: 1200px)  {
 

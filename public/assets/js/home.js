@@ -38,4 +38,3 @@ mediumLink.forEach(element => {
     });
 });
 
-

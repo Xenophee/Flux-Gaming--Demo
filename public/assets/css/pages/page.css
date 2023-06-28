@@ -6,8 +6,12 @@
 }
 
 .firstArticle {
-    border-top: 2px solid gold;
-    border-bottom: 2px solid gold;
+    border-top: var(--border-special-dark-solid);;
+    border-bottom: var(--border-special-dark-solid);
+}
+
+.firstArticle h2 {
+    color: var(--light-font);
 }
 
 .firstArticle img {
@@ -16,7 +20,7 @@
 
 .date {
     width: 50%;
-    border-bottom: 2px solid gold;
+    border-bottom: var(--border-special-dark-solid);;
 }
 
 .firstLink {
@@ -26,6 +30,11 @@
 .firstArticle .btn {
     width: 90%;
 }
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
 
 @media (min-width: 768px) and (max-width: 1200px)  {
 
