@@ -75,7 +75,7 @@ const verification = (event) => {
         let number = document.querySelector('.articlesNumber:checked');
 
         if (number.value != 6 && number.value != 9 && number.value != 12) {
-            articlesNumberMessage.textContent = 'Veuillez choisir un nombre d\'articles sans trafiquer le code.';
+            articlesNumberMessage.textContent = 'Veuillez choisir un nombre d\'articles valide.';
         } else {
             articlesNumberMessage.textContent = '';
         };
