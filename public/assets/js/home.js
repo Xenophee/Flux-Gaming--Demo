@@ -5,6 +5,10 @@ const mainLink = document.querySelectorAll('.mainLink');
 const mediumLink = document.querySelectorAll('.mediumLink');
 
 
+// =======================================================================================================================================================
+// -------------------------------------------------------------------------------------------------------------------------------------------------------
+// AFFICHAGE DU TEXTE SUR LES ARTICLES DE GRANDE TAILLE
+
 mainLink.forEach(element => {
     element.addEventListener('mouseover', () => {
         let paragraph = element.querySelector('p');
@@ -16,6 +20,12 @@ mainLink.forEach(element => {
         paragraph.classList.add('d-none');
     });
 });
+
+
+
+// =======================================================================================================================================================
+// -------------------------------------------------------------------------------------------------------------------------------------------------------
+// AFFICHAGE DU TEXTE SUR LES ARTICLES DE TAILLE MOYENNE
 
 
 mediumLink.forEach(element => {
