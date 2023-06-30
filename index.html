@@ -7,8 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Noto+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/assets/bootstrap-icons-1.10.3/bootstrap-icons.css">
     <link rel="stylesheet" href="./public/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./public/assets/css/theme/lightmode.css">
+    <link rel="stylesheet" href="" class="themeCssFile">
     <link rel="stylesheet" href="./public/assets/css/main.css">
+    <link rel="icon" type="image/png" href="../../public/assets/img/logo.png">
     <title>Accueil</title>
 </head>
 
@@ -16,7 +17,7 @@
 
     <header>
         <div class="container px-0">
-            <span class="siteTitle">FLUX-GAMING</span>
+            <span class="siteTitle d-flex align-items-center py-1"><img src="../../public/assets/img/logo.png" alt="" class="img-fluid me-3"> FLUX-GAMING</span>
             <nav class="navbar navbar-expand-md navbar-dark">
                 <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
@@ -153,7 +154,7 @@
 
             <!-- SECTION AVEC LA SUITE DES ARTICLES -->
             <section>
-                <div class="row mx-3">
+                <div class="row mx-3 pb-xl-5 mb-xl-5">
                     <div class="col-12 col-md-6 col-xl-3 mb-5 mb-xl-0">
                         <article class="card">
                             <img src="https://i.jeuxactus.com/datas/evenements/e/3/e3-2023/vn/e3-2023-642689c1c0045.jpg"
@@ -218,23 +219,6 @@
                         </article>
                     </div>
 
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination d-flex justify-content-center mt-4 pt-xl-5 mt-xl-5">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
             </section>
 
@@ -245,7 +229,7 @@
             <!-- PARTIE TESTS -->
             <section>
                 <h2 class="text-center py-3 py-md-0 mb-5"><span class="px-md-5">Les derniers tests</span></h2>
-                <div class="row pt-xl-5 mx-3">
+                <div class="row pt-xl-5 mb-xl-5 mx-3">
 
                     <div class="col-12 mb-4">
                         <article class="d-flex flex-column flex-xl-row align-items-center lastTest p-4">
@@ -304,24 +288,6 @@
                             </div>
                         </article>
                     </div>
-
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination d-flex justify-content-center mt-4 pt-xl-5 mt-xl-3">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
 
                 </div>
             </section>
@@ -396,6 +362,7 @@
 
     <script src="./public/assets/js/bootstrap.bundle.min.js"></script>
     <script src="./public/assets/js/home.js"></script>
+    <script src="./public/assets/js/theme.js"></script>
 </body>
 
 </html>

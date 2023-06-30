@@ -15,6 +15,8 @@ const verification = (event) => {
 
     event.preventDefault();
 
+    let css;
+
     // --------------------------------------------------------------------------------
     // Vérification sur le choix du thème
 
@@ -31,6 +33,7 @@ const verification = (event) => {
             themeMessage.textContent = 'Veuillez choisir un thème sans trafiquer le code.';
         } else {
             themeMessage.textContent = '';
+            css = theme.value;
         };
         
     };
@@ -85,7 +88,6 @@ const verification = (event) => {
 
     // --------------------------------------------------------------------------------
     // Envoi du formulaire
-
     let sendForm;
 
     smallMessages.forEach(element => {
@@ -95,8 +97,10 @@ const verification = (event) => {
     });
 
     if (sendForm != false) {
-        form.submit();
-    }
+        localStorage.setItem('css', css);
+        location.reload();
+        // form.submit();
+    };
 
 };
 

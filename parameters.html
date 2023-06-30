@@ -7,8 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Noto+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/assets/bootstrap-icons-1.10.3/bootstrap-icons.css">
     <link rel="stylesheet" href="./public/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./public/assets/css/theme/lightmode.css">
+    <link rel="stylesheet" href="" class="themeCssFile">
     <link rel="stylesheet" href="./public/assets/css/main.css">
+    <link rel="icon" type="image/png" href="../../public/assets/img/logo.png">
     <title>Paramètres</title>
 </head>
 
@@ -17,7 +18,7 @@
     <header>
         <div class="container px-0">
             <img src="" alt="">
-            <span class="siteTitle">FLUX-GAMING</span>
+            <span class="siteTitle d-flex align-items-center py-1"><img src="../../public/assets/img/logo.png" alt="" class="img-fluid me-3"> FLUX-GAMING</span>
             <nav class="navbar navbar-expand-md navbar-dark">
                 <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
@@ -72,7 +73,8 @@
 
                         <!-- CHOIX DU THÈME -->
                         <fieldset class="my-4">
-                            <legend class="text-center my-5">Choix du thème :</legend>
+                            <legend class="text-center my-5">Choix du thème :<br>
+                                <small class="info">(disponible dans cette démo)</small></legend>
                             <div class="d-flex flex-column flex-md-row justify-content-evenly pb-5 ps-3">
                                 <div class="d-inline d-flex align-items-center mb-4 mb-lg-0">
                                     <input type="radio" name="themeChoice" value="1" id="light"
@@ -94,8 +96,7 @@
 
                         <!-- CHOIX DES SUJETS -->
                         <fieldset class="my-4">
-                            <legend class="text-center my-5">Choisissez trois sujets parmi les suivants :<br>
-                            <small class="info">(disponible dans la barre de navigation)</small></legend>
+                            <legend class="text-center my-5">Choisissez trois sujets parmi les suivants :</legend>
                             <div class="d-flex flex-column flex-md-row justify-content-around pb-5 ps-3">
                                 <div class="form-check d-flex align-items-center mb-4 mb-lg-0">
                                     <input class="form-check-input subjectCheckbox" type="checkbox" name="subjects[]" value="0" id="pc">
@@ -193,6 +194,7 @@
 
     <script src="./public/assets/js/bootstrap.bundle.min.js"></script>
     <script src="./public/assets/js/parameters.js"></script>
+    <script src="./public/assets/js/theme.js"></script>
 </body>
 
 </html>
