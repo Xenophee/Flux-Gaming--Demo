@@ -1,8 +1,9 @@
 
 .subjectImg {
-    height: 55vh;
+    height: 30vh;
     width: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .firstArticle {
@@ -48,6 +49,10 @@
 }
 
 @media (min-width: 1200px) {
+
+    .subjectImg {
+        height: 55vh;
+    }
 
     .firstArticle .btn {
         width: 25%;
