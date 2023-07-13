@@ -1,8 +1,7 @@
 # Flux-Gaming--Demo
-Agrégateur de contenu sur le thème des jeux vidéos (visuel uniquement).
 
 
-Le site est en ligne : [ici](https://xenophee.github.io/Flux-Gaming--Demo/)
+La démo est en ligne : [ici](https://xenophee.github.io/Flux-Gaming--Demo/)
 
 
 ## Description du projet
